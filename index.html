@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Вращающаяся 3D-модель — стеклянная Струя.glb</title>
+    <title>Трёхмерные модели Кисловодска</title>
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
@@ -131,6 +131,7 @@
         height: 100%;
         min-height: 64vh;
         --poster-color: transparent;
+        --progress-bar-color: #ffd400;
         background: transparent;
       }
       .glow {
@@ -164,7 +165,7 @@
   <body>
     <main class="page">
       <header>
-        <h1 id="model-title">Стеклянная струя</h1>
+        <h1 id="model-title">Павильон «Стеклянная струя»</h1>
         <select
           id="model-select"
           class="model-select"
@@ -183,7 +184,7 @@
           rotation-per-second="14deg"
           interaction-prompt="none"
           shadow-intensity="0.75"
-          exposure="1.15"
+          exposure="0.6"
           environment-image="neutral"
           camera-orbit="0deg 70deg auto"
           field-of-view="35deg"
@@ -204,20 +205,20 @@
       const DEFAULT_MODEL_KEY = "streamOne";
       const MODEL_ENTRIES = {
         streamOne: {
-          label: "Стеклянная струя",
+          label: "Павильон «Стеклянная струя»",
           modelPath: "Струя.glb",
         },
-        baths: {
-          label: "Ванны",
-          modelPath: "Ванны.glb",
-        },
         gallery: {
-          label: "Галерея",
+          label: "Нарзанная галерея",
           modelPath: "Галерея.glb",
         },
         temple: {
-          label: "Храм",
+          label: "Храм воздуха",
           modelPath: "Храм.glb",
+        },
+        baths: {
+          label: "Главные нарзанные ванны",
+          modelPath: "Ванны.glb",
         },
       };
 
